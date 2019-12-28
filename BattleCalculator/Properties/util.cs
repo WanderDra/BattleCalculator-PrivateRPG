@@ -27,5 +27,27 @@ namespace BattleCalculator.Properties
             }
             return 0;
         }
+
+        public double GetDoubleInTB(TextBox tb)
+        {
+            double result;
+            if(tb.Text != "" && tb.Text != "-")
+            {
+                result = double.Parse(tb.Text);
+                return result;
+            }
+            return 0;
+        }
+
+        public int GetIntInTB(TextBox tb)
+        {
+            int result;
+            if(tb.Text != "" && tb.Text != "-")
+            {
+                result = int.Parse(tb.Text);
+                return result;
+            }
+            return 0;
+        }
     }
 }

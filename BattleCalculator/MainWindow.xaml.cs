@@ -24,6 +24,33 @@ namespace BattleCalculator
 
         static List<TextBox> tblist;
         Util ul;
+        double temp;
+        double strenth;
+        double swift;
+        double bright;
+        double stamina;
+        double health;
+        double determination;
+        double intelligence;
+        double weight;
+        int weapon_skill_lv_atk;
+        int dodge_skill_lv_atk;
+        double damageMin, damageMax;
+        double effectAttr;
+        double pierceAttr;
+        double breakAttr;
+        double body_armor;
+        double body_armor_type;
+        double head_armor;
+        double head_armor_type;
+        double accuracy;
+        double dodge;
+        double maxstanima;
+        double tire;
+        double staminaRe;
+        double remainSta;
+
+        int round;
 
         public MainWindow()
         {
@@ -51,6 +78,8 @@ namespace BattleCalculator
             tblist.Add(intelligenceAddTB);
             tblist.Add(weightTB);
             tblist.Add(weightAddTB);
+            tblist.Add(weaponSkillLvTB_atk);
+            tblist.Add(dodgeSkillLvTB_atk);
             tblist.Add(damageMinTB);
             tblist.Add(damageMaxTB);
             tblist.Add(effectiveTB);
@@ -83,14 +112,7 @@ namespace BattleCalculator
 
         private void Calculation(object sender, TextChangedEventArgs e)
         {
-            double temp;
-            double strenth;
-            double swift;
-            double bright;
-            double stamina;
-            double health;
-            double determination;
-            double intelligence;
+            
             try
             {
                 foreach (TextBox tb in tblist)
@@ -103,6 +125,7 @@ namespace BattleCalculator
                         }
                 }
                 
+                // data input section
                 strenth = ul.ACTAttrCal(strengthTB, strengthAddTB);
                 strengthAct.Content = strenth;
                 swift = ul.ACTAttrCal(swiftTB, swiftAddTB);
@@ -117,8 +140,55 @@ namespace BattleCalculator
                 determinationAct.Content = determination;
                 intelligence = ul.ACTAttrCal(intelligenceTB, intelligenceAddTB);
                 intelligenceAct.Content = intelligence;
+                weight = ul.ACTAttrCal(weightTB, weightAddTB);
+                weightAct.Content = weight;
+                weapon_skill_lv_atk = ul.GetIntInTB(weaponSkillLvTB_atk);
+                weaponSkillLvAct_atk.Content = weapon_skill_lv_atk;
+                dodge_skill_lv_atk = ul.GetIntInTB(dodgeSkillLvTB_atk);
+                dodgeSkillLvAct_atk.Content = dodge_skill_lv_atk;
+                damageMin = ul.GetDoubleInTB(damageMinTB);
+                damageMax = ul.GetDoubleInTB(damageMaxTB);
+                rangeAct.Content = "" + damageMin + " - " + damageMax;
+                effectAttr = ul.ACTAttrCal(effectiveTB, effectiveAddTB);
+                effectAct.Content = effectAttr;
+                pierceAttr = ul.ACTAttrCal(pierceTB, pierceAddTB);
+                pierceAct.Content = pierceAttr;
+                breakAttr = ul.ACTAttrCal(breakTB, breakAddTB);
+                breakAct.Content = breakAttr;
+                body_armor = ul.ACTAttrCal(bodyArmorTB, bodyArmorAddTB);
+                bodyArmorAct.Content = body_armor;
+                body_armor_type = headArmorTypeCB.SelectedIndex;
+                head_armor = ul.ACTAttrCal(headArmorTB, headArmorAddTB);
+                headArmorAct.Content = head_armor;
+                head_armor_type = headArmorTypeCB.SelectedIndex;
 
+                // battle calculated section
+                round = ul.GetIntInTB(roundTB);
+                accuracy = 20 * weapon_skill_lv_atk;
+                if (accuracy > swift * 2)
+                {
+                    accuracy = swift * 2;
+                }
+                accuracyTxt.Content = accuracy;
 
+                dodge = 20 * dodge_skill_lv_atk;
+                if (dodge > bright * 2)
+                {
+                    dodge = bright * 2;
+                }
+                dodgeTxt.Content = dodge;
+
+                maxstanima = stamina * 3 - weight;
+                maxStaTxt.Content = maxstanima;
+
+                tire = round + weight/2;
+                tireTxt.Content = tire;
+
+                staminaRe = 15 - tire;
+                recoverStaTxt.Content = staminaRe;
+
+                remainSta = ul.GetDoubleInTB(remainStaTB);
+                
 
 
             }
