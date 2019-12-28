@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BattleCalculator"
         mc:Ignorable="d"
-        Title="战斗计算器" Height="648.583" Width="800" ResizeMode="NoResize" AutomationProperties.Name="MainWindow">
+        Title="战斗计算器" Height="648.583" Width="800" ResizeMode="NoResize" AutomationProperties.Name="MainWindow" Initialized="Init">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="197*"/>

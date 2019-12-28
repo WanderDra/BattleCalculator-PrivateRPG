@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using BattleCalculator.Properties;
 
 namespace BattleCalculator
 {
@@ -21,11 +22,19 @@ namespace BattleCalculator
     public partial class MainWindow : Window
     {
 
-        static List<TextBox> tblist = new List<TextBox>();
+        static List<TextBox> tblist;
+        Util ul;
 
         public MainWindow()
         {
             InitializeComponent();
+            
+        }
+
+
+        private void Init(object sender, EventArgs e)
+        {
+            tblist = new List<TextBox>();
             tblist.Add(strengthTB);
             tblist.Add(strengthAddTB);
             tblist.Add(swiftTB);
@@ -39,6 +48,7 @@ namespace BattleCalculator
             tblist.Add(determinationTB);
             tblist.Add(determinationAddTB);
             tblist.Add(intelligenceTB);
+            tblist.Add(intelligenceAddTB);
             tblist.Add(weightTB);
             tblist.Add(weightAddTB);
             tblist.Add(damageMinTB);
@@ -62,8 +72,9 @@ namespace BattleCalculator
             tblist.Add(conDodgeAdjTB);
             tblist.Add(pinchAdjTB);
             tblist.Add(headshotAdjTB);
-        }
 
+            ul = new Util();
+        }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -75,39 +86,48 @@ namespace BattleCalculator
             double temp;
             double strenth;
             double swift;
-            foreach (TextBox tb in tblist)
+            double bright;
+            double stamina;
+            double health;
+            double determination;
+            double intelligence;
+            try
             {
-                if (tb.Text != "" && double.TryParse(tb.Text, out temp) == false)
+                foreach (TextBox tb in tblist)
                 {
-                    tb.Text = "非法数值";
-                    break;
+                    if (tb.Text != "-")
+                        if (tb.Text != "" && double.TryParse(tb.Text, out temp) == false)
+                        {
+                            tb.Text = "";
+                            break;
+                        }
                 }
-            }
-
-            if (strengthTB.Text != "")
-            {
-                strenth = double.Parse(strengthTB.Text);
-                if (strengthAddTB.Text != "") {
-                    strenth = double.Parse(strengthTB.Text) + double.Parse(strengthAddTB.Text);
-                }
+                
+                strenth = ul.ACTAttrCal(strengthTB, strengthAddTB);
                 strengthAct.Content = strenth;
-            }
-
-            if (swiftTB.Text != "")
-            {
-                swift = double.Parse(swiftTB.Text);
-                if (swiftAddTB.Text != "")
-                {
-                    swift = double.Parse(swiftTB.Text) + double.Parse(swiftAddTB.Text);
-                }
+                swift = ul.ACTAttrCal(swiftTB, swiftAddTB);
                 swiftAct.Content = swift;
+                bright = ul.ACTAttrCal(brightTB, brightAddTB);
+                brightAct.Content = bright;
+                stamina = ul.ACTAttrCal(staminaTB, staminaAddTB);
+                staminaAct.Content = stamina;
+                health = ul.ACTAttrCal(healthTB, healthAddTB);
+                healthAct.Content = health;
+                determination = ul.ACTAttrCal(determinationTB, determinationAddTB);
+                determinationAct.Content = determination;
+                intelligence = ul.ACTAttrCal(intelligenceTB, intelligenceAddTB);
+                intelligenceAct.Content = intelligence;
+
+
+
+
             }
-
-            
-
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
-
 
     }
 }
