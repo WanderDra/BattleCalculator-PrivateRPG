@@ -36,6 +36,7 @@ namespace BattleCalculator
         double weight;
         int weapon_skill_lv_atk;
         int dodge_skill_lv_atk;
+        int guard_skill_lv_atk;
         double damageMin, damageMax;
         double effectAttr;
         double pierceAttr;
@@ -46,6 +47,7 @@ namespace BattleCalculator
         double head_armor_type;
         double accuracy;
         double dodge;
+        double guard_atk;
         double maxstanima;
         double tire;
         double staminaRe;
@@ -69,10 +71,12 @@ namespace BattleCalculator
         double weight_tgt;
         int weapon_skill_lv_tgt;
         int dodge_skill_lv_tgt;
+        int guard_skill_lv_tgt;
         double accuracy_tgt;
         double initiative_tgt;
         int enter_round_tgt;
         double dodge_tgt;
+        double guard_tgt;
         double bright_tgt;
         
 
@@ -106,6 +110,7 @@ namespace BattleCalculator
             tblist.Add(weightAddTB);
             tblist.Add(weaponSkillLvTB_atk);
             tblist.Add(dodgeSkillLvTB_atk);
+            tblist.Add(guardSkillLvTB_atk);
             tblist.Add(damageMinTB);
             tblist.Add(damageMaxTB);
             tblist.Add(effectiveTB);
@@ -140,6 +145,7 @@ namespace BattleCalculator
             tblist.Add(weightAddTB_tgt);
             tblist.Add(weaponSkillLvTB_tgt);
             tblist.Add(dodgeSkillLvTB_tgt);
+            tblist.Add(guardSkillLvTB_tgt);
             tblist.Add(enterRoundTB_tgt);
 
 
@@ -191,6 +197,8 @@ namespace BattleCalculator
                 weaponSkillLvAct_atk.Content = weapon_skill_lv_atk;
                 dodge_skill_lv_atk = ul.GetIntInTB(dodgeSkillLvTB_atk);
                 dodgeSkillLvAct_atk.Content = dodge_skill_lv_atk;
+                guard_skill_lv_atk = ul.GetIntInTB(guardSkillLvTB_atk);
+                guardSkillLvAct_atk.Content = guard_skill_lv_atk;
                 damageMin = ul.GetDoubleInTB(damageMinTB);
                 damageMax = ul.GetDoubleInTB(damageMaxTB);
                 rangeAct.Content = "" + damageMin + " - " + damageMax;
@@ -222,6 +230,10 @@ namespace BattleCalculator
                 weightAct_tgt.Content = weight_tgt;
                 weapon_skill_lv_tgt = ul.GetIntInTB(weaponSkillLvTB_tgt);
                 weaponSkillLv_tgt.Content = weapon_skill_lv_tgt;
+                dodge_skill_lv_tgt = ul.GetIntInTB(dodgeSkillLvTB_tgt);
+                dodgeSkillLvAct_tgt.Content = dodge_skill_lv_tgt;
+                guard_skill_lv_tgt = ul.GetIntInTB(guardSkillLvTB_tgt);
+                guardSkillLvAct_tgt.Content = guard_skill_lv_tgt;
                 enter_round_tgt = ul.GetACTRound(enterRoundTB_tgt, roundTB);
                 enterRoundACT_tgt.Content = enter_round_tgt;
 
@@ -240,6 +252,13 @@ namespace BattleCalculator
                     dodge = bright * 2.0;
                 }
                 dodgeTxt.Content = dodge;
+
+                guard_atk = 20 * guard_skill_lv_atk;
+                if (guard_atk > bright * 2.0)
+                {
+                    guard_atk = bright * 2.0;
+                }
+                guardTxt.Content = guard_atk;
 
                 maxstanima = stamina * 3.0 - weight;
                 maxStaTxt.Content = maxstanima;
@@ -279,6 +298,12 @@ namespace BattleCalculator
                 if (dodge_tgt > bright_tgt * 2.0)
                 {
                     dodge_tgt = bright_tgt * 2.0;
+                }
+
+                guard_tgt = 20 * guard_skill_lv_tgt;
+                if (guard_tgt > bright_tgt * 2.0)
+                {
+                    guard_tgt = bright_tgt * 2.0;
                 }
 
                 tire_tgt = enter_round_tgt + weight_tgt / 2.0;

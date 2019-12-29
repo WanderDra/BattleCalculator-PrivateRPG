@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BattleCalculator"
         mc:Ignorable="d"
-        Title="战斗计算器" Height="690.583" Width="1200" ResizeMode="NoResize" AutomationProperties.Name="MainWindow" Initialized="Init">
+        Title="战斗计算器" Height="735.583" Width="1200" ResizeMode="NoResize" AutomationProperties.Name="MainWindow" Initialized="Init">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -41,31 +41,31 @@
         <Label Content="负重" HorizontalAlignment="Left" Margin="56,233,0,0" VerticalAlignment="Top" Height="25" Width="34"/>
         <TextBox x:Name="weightTB" HorizontalAlignment="Left" Height="25" Margin="115,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="weightTB" TextChanged="Calculation"/>
         <TextBox x:Name="weightAddTB" HorizontalAlignment="Left" Height="25" Margin="205,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="weightAddTB" TextChanged="Calculation"/>
-        <Label Content="伤害范围" HorizontalAlignment="Left" Margin="35,337,0,0" VerticalAlignment="Top" Height="25" Width="58"/>
-        <TextBox x:Name="damageMinTB" HorizontalAlignment="Left" Height="25" Margin="115,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextAlignment="Center" FontSize="14" AutomationProperties.Name="damageMinTB" TextChanged="Calculation"/>
-        <Label Content="有效系数" HorizontalAlignment="Left" Margin="35,367,0,0" VerticalAlignment="Top" Height="25" Width="58"/>
-        <TextBox x:Name="effectiveTB" HorizontalAlignment="Left" Height="25" Margin="115,369,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="effectiveTB" TextChanged="Calculation"/>
-        <TextBox x:Name="effectiveAddTB" HorizontalAlignment="Left" Height="25" Margin="205,369,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="effectiveAddTB" TextChanged="Calculation"/>
-        <Label Content="穿甲系数" HorizontalAlignment="Left" Margin="35,397,0,0" VerticalAlignment="Top" Height="25" Width="58"/>
-        <TextBox x:Name="pierceTB" HorizontalAlignment="Left" Height="25" Margin="115,399,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="pierceTB" TextChanged="Calculation"/>
-        <TextBox x:Name="pierceAddTB" HorizontalAlignment="Left" Height="25" Margin="205,399,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="pierceAddTB" TextChanged="Calculation"/>
-        <Label Content="破甲系数" HorizontalAlignment="Left" Margin="35,427,0,0" VerticalAlignment="Top" Height="25" Width="58"/>
-        <TextBox x:Name="breakTB" HorizontalAlignment="Left" Height="25" Margin="115,429,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="breakTB" TextChanged="Calculation"/>
-        <TextBox x:Name="breakAddTB" HorizontalAlignment="Left" Height="25" Margin="205,429,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="breakAddTB" TextChanged="Calculation"/>
-        <Label Content="身体护甲值" HorizontalAlignment="Left" Margin="23,468,0,0" VerticalAlignment="Top" Height="25" Width="70"/>
-        <TextBox x:Name="bodyArmorTB" HorizontalAlignment="Left" Height="25" Margin="115,470,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="bodyArmorTB" TextChanged="Calculation"/>
-        <TextBox x:Name="bodyArmorAddTB" HorizontalAlignment="Left" Height="25" Margin="205,470,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="bodyArmorAddTB" TextChanged="Calculation"/>
-        <Label Content="护甲类型" HorizontalAlignment="Left" Margin="35,498,0,0" VerticalAlignment="Top" Height="25" Width="58"/>
-        <Label Content="头部护甲值" HorizontalAlignment="Left" Margin="23,528,0,0" VerticalAlignment="Top" Height="25" Width="70"/>
-        <TextBox x:Name="headArmorTB" HorizontalAlignment="Left" Height="25" Margin="115,530,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="headArmorTB" TextChanged="Calculation"/>
-        <TextBox x:Name="headArmorAddTB" HorizontalAlignment="Left" Height="25" Margin="205,530,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="headArmorAddTB" TextChanged="Calculation"/>
-        <Label Content="护甲类型" HorizontalAlignment="Left" Margin="35,558,0,0" VerticalAlignment="Top" Height="25" Width="58"/>
+        <Label Content="伤害范围" HorizontalAlignment="Left" Margin="35,371,0,0" VerticalAlignment="Top" Height="25" Width="58"/>
+        <TextBox x:Name="damageMinTB" HorizontalAlignment="Left" Height="25" Margin="115,373,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextAlignment="Center" FontSize="14" AutomationProperties.Name="damageMinTB" TextChanged="Calculation"/>
+        <Label Content="有效系数" HorizontalAlignment="Left" Margin="35,401,0,0" VerticalAlignment="Top" Height="25" Width="58"/>
+        <TextBox x:Name="effectiveTB" HorizontalAlignment="Left" Height="25" Margin="115,403,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="effectiveTB" TextChanged="Calculation"/>
+        <TextBox x:Name="effectiveAddTB" HorizontalAlignment="Left" Height="25" Margin="205,403,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="effectiveAddTB" TextChanged="Calculation"/>
+        <Label Content="穿甲系数" HorizontalAlignment="Left" Margin="35,431,0,0" VerticalAlignment="Top" Height="25" Width="58"/>
+        <TextBox x:Name="pierceTB" HorizontalAlignment="Left" Height="25" Margin="115,433,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="pierceTB" TextChanged="Calculation"/>
+        <TextBox x:Name="pierceAddTB" HorizontalAlignment="Left" Height="25" Margin="205,433,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="pierceAddTB" TextChanged="Calculation"/>
+        <Label Content="破甲系数" HorizontalAlignment="Left" Margin="35,461,0,0" VerticalAlignment="Top" Height="25" Width="58"/>
+        <TextBox x:Name="breakTB" HorizontalAlignment="Left" Height="25" Margin="115,463,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="breakTB" TextChanged="Calculation"/>
+        <TextBox x:Name="breakAddTB" HorizontalAlignment="Left" Height="25" Margin="205,463,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="breakAddTB" TextChanged="Calculation"/>
+        <Label Content="身体护甲值" HorizontalAlignment="Left" Margin="23,502,0,0" VerticalAlignment="Top" Height="25" Width="70"/>
+        <TextBox x:Name="bodyArmorTB" HorizontalAlignment="Left" Height="25" Margin="115,504,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="bodyArmorTB" TextChanged="Calculation"/>
+        <TextBox x:Name="bodyArmorAddTB" HorizontalAlignment="Left" Height="25" Margin="205,504,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="bodyArmorAddTB" TextChanged="Calculation"/>
+        <Label Content="护甲类型" HorizontalAlignment="Left" Margin="35,532,0,0" VerticalAlignment="Top" Height="25" Width="58"/>
+        <Label Content="头部护甲值" HorizontalAlignment="Left" Margin="23,562,0,0" VerticalAlignment="Top" Height="25" Width="70"/>
+        <TextBox x:Name="headArmorTB" HorizontalAlignment="Left" Height="25" Margin="115,564,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="headArmorTB" TextChanged="Calculation"/>
+        <TextBox x:Name="headArmorAddTB" HorizontalAlignment="Left" Height="25" Margin="205,564,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="headArmorAddTB" TextChanged="Calculation"/>
+        <Label Content="护甲类型" HorizontalAlignment="Left" Margin="35,592,0,0" VerticalAlignment="Top" Height="25" Width="58"/>
         <Label Content="实际属性" HorizontalAlignment="Left" Margin="309,0,0,0" VerticalAlignment="Top" Height="25" Width="58"/>
-        <ComboBox x:Name="headArmorTypeCB" HorizontalAlignment="Left" Margin="115,502,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" AutomationProperties.Name="headArmorTypeCB" Height="21">
+        <ComboBox x:Name="headArmorTypeCB" HorizontalAlignment="Left" Margin="115,536,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" AutomationProperties.Name="headArmorTypeCB" Height="21">
             <ComboBoxItem Content="布甲"/>
             <ComboBoxItem Content="中甲"/>
         </ComboBox>
-        <ComboBox x:Name="bodyArmorTypeCB" HorizontalAlignment="Left" Margin="115,562,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" AutomationProperties.Name="bodyArmorTypeCB" Height="21">
+        <ComboBox x:Name="bodyArmorTypeCB" HorizontalAlignment="Left" Margin="115,596,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" AutomationProperties.Name="bodyArmorTypeCB" Height="21">
             <ComboBoxItem Content="布甲"/>
             <ComboBoxItem Content="中甲"/>
         </ComboBox>
@@ -77,37 +77,37 @@
         <Label x:Name="determinationAct" Content="0" HorizontalAlignment="Left" Margin="329,175,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="determinationAct" Height="25"/>
         <Label x:Name="intelligenceAct" Content="0" HorizontalAlignment="Left" Margin="329,205,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="intelligenceAct" Height="25"/>
         <Label x:Name="weightAct" Content="0" HorizontalAlignment="Left" Margin="329,235,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="weightAct" Height="25"/>
-        <Label x:Name="rangeAct" Content="0" HorizontalAlignment="Left" Margin="292,339,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="rangeAct" Height="25"/>
-        <Label x:Name="effectAct" Content="0" HorizontalAlignment="Left" Margin="329,369,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="effectAct" Height="25"/>
-        <Label x:Name="pierceAct" Content="0" HorizontalAlignment="Left" Margin="329,399,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="pierceAct" Height="25"/>
-        <Label x:Name="breakAct" Content="0" HorizontalAlignment="Left" Margin="329,429,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="breakAct" Height="25"/>
-        <Label x:Name="bodyArmorAct" Content="0" HorizontalAlignment="Left" Margin="329,470,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="bodyArmorAct" Height="25"/>
-        <Label x:Name="headArmorAct" Content="0" HorizontalAlignment="Left" Margin="329,530,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="headArmorAct" Height="25"/>
+        <Label x:Name="rangeAct" Content="0" HorizontalAlignment="Left" Margin="292,373,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="rangeAct" Height="25"/>
+        <Label x:Name="effectAct" Content="0" HorizontalAlignment="Left" Margin="329,403,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="effectAct" Height="25"/>
+        <Label x:Name="pierceAct" Content="0" HorizontalAlignment="Left" Margin="329,433,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="pierceAct" Height="25"/>
+        <Label x:Name="breakAct" Content="0" HorizontalAlignment="Left" Margin="329,463,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="breakAct" Height="25"/>
+        <Label x:Name="bodyArmorAct" Content="0" HorizontalAlignment="Left" Margin="329,504,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="bodyArmorAct" Height="25"/>
+        <Label x:Name="headArmorAct" Content="0" HorizontalAlignment="Left" Margin="329,564,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="headArmorAct" Height="25"/>
         <Label Content="回合" HorizontalAlignment="Left" Margin="29,8,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="34"/>
         <TextBox x:Name="roundTB" HorizontalAlignment="Left" Height="25" Margin="68,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="roundTB" Grid.Column="1" TextChanged="Calculation"/>
-        <Button x:Name="clearBtn_atk" Content="清空数据" HorizontalAlignment="Left" Margin="263,621,0,0" VerticalAlignment="Top" Width="75" AutomationProperties.Name="clearBtn" Height="19"/>
-        <Button x:Name="saveBtn_atk" Content="保存" HorizontalAlignment="Left" Margin="35,621,0,0" VerticalAlignment="Top" Width="75" AutomationProperties.Name="saveBtn" Height="19"/>
-        <Button x:Name="loadBtn_atk" Content="导入" HorizontalAlignment="Left" Margin="135,621,0,0" VerticalAlignment="Top" Width="75" AutomationProperties.Name="loadBtn" Height="19"/>
+        <Button x:Name="clearBtn_atk" Content="清空数据" HorizontalAlignment="Left" Margin="254,665,0,0" VerticalAlignment="Top" Width="75" AutomationProperties.Name="clearBtn" Height="19"/>
+        <Button x:Name="saveBtn_atk" Content="保存" HorizontalAlignment="Left" Margin="26,665,0,0" VerticalAlignment="Top" Width="75" AutomationProperties.Name="saveBtn" Height="19"/>
+        <Button x:Name="loadBtn_atk" Content="导入" HorizontalAlignment="Left" Margin="126,665,0,0" VerticalAlignment="Top" Width="75" AutomationProperties.Name="loadBtn" Height="19"/>
         <Label Content="命中" HorizontalAlignment="Left" Margin="36,38,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="34"/>
         <Label Content="回避" HorizontalAlignment="Left" Margin="36,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="34"/>
-        <Label Content="耐力上限" HorizontalAlignment="Left" Margin="12,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="58"/>
-        <Label Content="疲劳" HorizontalAlignment="Left" Margin="36,128,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="34"/>
-        <Label Content="耐力回复" HorizontalAlignment="Left" Margin="12,158,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="58"/>
-        <Label Content="剩余耐力" HorizontalAlignment="Left" Margin="12,188,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="58"/>
-        <Label Content="主动性" HorizontalAlignment="Left" Margin="24,227,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="46"/>
-        <Label Content="力量补正" HorizontalAlignment="Left" Margin="12,257,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="58"/>
-        <Label Content="HP" HorizontalAlignment="Left" Margin="43,301,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="27"/>
-        <TextBox x:Name="remainStaTB" HorizontalAlignment="Left" Height="25" Margin="75,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="remainStaTB" Grid.Column="1" TextChanged="Calculation"/>
+        <Label Content="耐力上限" HorizontalAlignment="Left" Margin="12,126,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="58"/>
+        <Label Content="疲劳" HorizontalAlignment="Left" Margin="36,154,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="34"/>
+        <Label Content="耐力回复" HorizontalAlignment="Left" Margin="12,184,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="58"/>
+        <Label Content="剩余耐力" HorizontalAlignment="Left" Margin="12,214,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="58"/>
+        <Label Content="主动性" HorizontalAlignment="Left" Margin="24,253,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="46"/>
+        <Label Content="力量补正" HorizontalAlignment="Left" Margin="12,283,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="58"/>
+        <Label Content="HP" HorizontalAlignment="Left" Margin="204,257,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="27"/>
+        <TextBox x:Name="remainStaTB" HorizontalAlignment="Left" Height="25" Margin="75,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="remainStaTB" Grid.Column="1" TextChanged="Calculation"/>
         <Label x:Name="accuracyTxt" Content="0" HorizontalAlignment="Left" Margin="90,38,0,0" VerticalAlignment="Top" Width="52" AutomationProperties.Name="accuracyTxt" Grid.Column="1" Height="25"/>
         <Label x:Name="dodgeTxt" Content="0" HorizontalAlignment="Left" Margin="90,68,0,0" VerticalAlignment="Top" Width="52" Grid.Column="1" AutomationProperties.Name="dodgeTxt" Height="25"/>
-        <Label x:Name="maxStaTxt" Content="0" HorizontalAlignment="Left" Margin="90,98,0,0" VerticalAlignment="Top" Width="52" AutomationProperties.Name="maxStaTxt" Grid.Column="1" Height="25"/>
-        <Label x:Name="tireTxt" Content="0" HorizontalAlignment="Left" Margin="90,128,0,0" VerticalAlignment="Top" Width="52" AutomationProperties.Name="tireTxt" Grid.Column="1" Height="25"/>
-        <Label x:Name="recoverStaTxt" Content="0" HorizontalAlignment="Left" Margin="90,158,0,0" VerticalAlignment="Top" Width="52" AutomationProperties.Name="recoverStaTxt" Grid.Column="1" Height="25"/>
-        <Label x:Name="initTxt" Content="0" HorizontalAlignment="Left" Margin="90,227,0,0" VerticalAlignment="Top" Width="52" AutomationProperties.Name="initTxt" Grid.Column="1" RenderTransformOrigin="0.502,0.52" Height="25"/>
-        <Label x:Name="addStrTxt" Content="0" HorizontalAlignment="Left" Margin="90,257,0,0" VerticalAlignment="Top" Width="52" AutomationProperties.Name="addStrTxt" Grid.Column="1" RenderTransformOrigin="0.502,0.52" Height="25"/>
-        <Label x:Name="hpTxt" Content="0" HorizontalAlignment="Left" Margin="90,301,0,0" VerticalAlignment="Top" Width="52" AutomationProperties.Name="hpTxt" Grid.Column="1" RenderTransformOrigin="0.502,0.52" Height="25"/>
-        <TextBox x:Name="damageMaxTB" HorizontalAlignment="Left" Height="25" Margin="204,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextAlignment="Center" FontSize="14" AutomationProperties.Name="damageMaxTB" TextChanged="Calculation"/>
-        <Label Content="-" HorizontalAlignment="Left" Margin="180,339,0,0" VerticalAlignment="Top" Width="24" Height="25"/>
+        <Label x:Name="maxStaTxt" Content="0" HorizontalAlignment="Left" Margin="90,126,0,0" VerticalAlignment="Top" Width="52" AutomationProperties.Name="maxStaTxt" Grid.Column="1" Height="25"/>
+        <Label x:Name="tireTxt" Content="0" HorizontalAlignment="Left" Margin="90,154,0,0" VerticalAlignment="Top" Width="52" AutomationProperties.Name="tireTxt" Grid.Column="1" Height="25"/>
+        <Label x:Name="recoverStaTxt" Content="0" HorizontalAlignment="Left" Margin="90,184,0,0" VerticalAlignment="Top" Width="52" AutomationProperties.Name="recoverStaTxt" Grid.Column="1" Height="25"/>
+        <Label x:Name="initTxt" Content="0" HorizontalAlignment="Left" Margin="90,253,0,0" VerticalAlignment="Top" Width="52" AutomationProperties.Name="initTxt" Grid.Column="1" RenderTransformOrigin="0.502,0.52" Height="25"/>
+        <Label x:Name="addStrTxt" Content="0" HorizontalAlignment="Left" Margin="90,283,0,0" VerticalAlignment="Top" Width="52" AutomationProperties.Name="addStrTxt" Grid.Column="1" RenderTransformOrigin="0.502,0.52" Height="25"/>
+        <Label x:Name="hpTxt" Content="0" HorizontalAlignment="Left" Margin="251,257,0,0" VerticalAlignment="Top" Width="52" AutomationProperties.Name="hpTxt" Grid.Column="1" RenderTransformOrigin="0.502,0.52" Height="25"/>
+        <TextBox x:Name="damageMaxTB" HorizontalAlignment="Left" Height="25" Margin="204,373,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextAlignment="Center" FontSize="14" AutomationProperties.Name="damageMaxTB" TextChanged="Calculation"/>
+        <Label Content="-" HorizontalAlignment="Left" Margin="180,373,0,0" VerticalAlignment="Top" Width="24" Height="25"/>
         <Label Content="高度差补正" HorizontalAlignment="Left" Margin="176,38,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="70"/>
         <Label Content="角度补正" HorizontalAlignment="Left" Margin="188,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="58"/>
         <Label Content="连击补正" HorizontalAlignment="Left" Margin="188,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="58"/>
@@ -125,7 +125,7 @@
         <Label Content="结果" HorizontalAlignment="Left" Margin="24,384,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="34"/>
         <Button x:Name="calBtn" Content="计算" HorizontalAlignment="Left" Margin="151,332,0,0" VerticalAlignment="Top" Width="75" AutomationProperties.Name="calBtn" Grid.Column="1" Height="28" Click="CalBtn_Click"/>
         <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1" HorizontalAlignment="Right" Height="362" VerticalAlignment="Top" Width="399" Panel.ZIndex="-10" Margin="0,0,1,0"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="650" VerticalAlignment="Top" Width="391" Panel.ZIndex="-16"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="697" VerticalAlignment="Top" Width="391" Panel.ZIndex="-16"/>
         <Label Content="目标护甲" HorizontalAlignment="Left" Margin="12,414,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="58"/>
         <Label Content="有效伤害" HorizontalAlignment="Left" Margin="75,414,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="58"/>
         <Label Content="护甲损伤" HorizontalAlignment="Left" Margin="138,414,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="58"/>
@@ -139,11 +139,11 @@
         <TextBox x:Name="bodyDamageTB" HorizontalAlignment="Left" Height="25" Margin="264,447,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" TextAlignment="Center" FontSize="14" AutomationProperties.Name="bodyDamageTB" Grid.Column="1" IsEnabled="False"/>
         <TextBox x:Name="overDamageTB" HorizontalAlignment="Left" Height="25" Margin="327,447,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" TextAlignment="Center" FontSize="14" AutomationProperties.Name="overDamageTB" Grid.Column="1" IsEnabled="False"/>
         <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1" HorizontalAlignment="Left" Height="82" Margin="0,409,0,0" VerticalAlignment="Top" Width="389" Panel.ZIndex="-10"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="650" VerticalAlignment="Top" Width="398" Panel.ZIndex="-16" Grid.Column="2">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="697" VerticalAlignment="Top" Width="398" Panel.ZIndex="-16" Grid.Column="2">
             <Label Content="目标" Margin="0,0,345,588"/>
         </Border>
-        <Button x:Name="saveBtn_target" Content="保存" HorizontalAlignment="Left" Margin="47,621,0,0" VerticalAlignment="Top" Width="76" AutomationProperties.Name="saveBtn" Height="19" Grid.Column="2"/>
-        <Button x:Name="clearBtn_target" Content="清空数据" HorizontalAlignment="Left" Margin="271,621,0,0" VerticalAlignment="Top" Width="76" AutomationProperties.Name="clearBtn" Height="19" Grid.Column="2"/>
+        <Button x:Name="saveBtn_target" Content="保存" HorizontalAlignment="Left" Margin="34,665,0,0" VerticalAlignment="Top" Width="76" AutomationProperties.Name="saveBtn" Height="19" Grid.Column="2"/>
+        <Button x:Name="clearBtn_target" Content="清空数据" HorizontalAlignment="Left" Margin="258,665,0,0" VerticalAlignment="Top" Width="76" AutomationProperties.Name="clearBtn" Height="19" Grid.Column="2"/>
         <Label Content="进攻方" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="51"/>
         <Label Content="武器技能等级" HorizontalAlignment="Left" Margin="21,268,0,0" VerticalAlignment="Top" Height="25" Width="89"/>
         <TextBox x:Name="weaponSkillLvTB_atk" HorizontalAlignment="Left" Height="25" Margin="115,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="weightTB" TextChanged="Calculation"/>
@@ -151,7 +151,7 @@
         <Label Content="回避技能等级" HorizontalAlignment="Left" Margin="21,298,0,0" VerticalAlignment="Top" Height="25" Width="89"/>
         <TextBox x:Name="dodgeSkillLvTB_atk" HorizontalAlignment="Left" Height="25" Margin="115,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="weightTB" TextChanged="Calculation"/>
         <Label x:Name="dodgeSkillLvAct_atk" Content="0" HorizontalAlignment="Left" Margin="329,297,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="weightAct" Height="25"/>
-        <Button x:Name="loadBtn_target" Content="导入" HorizontalAlignment="Left" Margin="147,621,0,0" VerticalAlignment="Top" Width="76" AutomationProperties.Name="saveBtn" Height="19" Grid.Column="2"/>
+        <Button x:Name="loadBtn_target" Content="导入" HorizontalAlignment="Left" Margin="134,665,0,0" VerticalAlignment="Top" Width="76" AutomationProperties.Name="saveBtn" Height="19" Grid.Column="2"/>
         <Label Content="武器技能等级" HorizontalAlignment="Left" Margin="26,266,0,0" VerticalAlignment="Top" Height="25" Width="90" Grid.Column="2"/>
         <TextBox x:Name="weaponSkillLvTB_tgt" HorizontalAlignment="Left" Height="25" Margin="115,266,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="weightTB" TextChanged="Calculation" Grid.Column="2"/>
         <Label Content="敏捷" HorizontalAlignment="Left" Margin="56,53,0,0" VerticalAlignment="Top" Height="25" Width="34" Grid.Column="2"/>
@@ -174,12 +174,12 @@
         <Label x:Name="weaponSkillLv_tgt" Content="0" HorizontalAlignment="Left" Margin="329,268,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="weightAct" Height="25" Grid.Column="2"/>
         <Label Content="疲劳" HorizontalAlignment="Left" Margin="56,128,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="2" Height="25" Width="34"/>
         <Label x:Name="tireTxt_tgt" Content="0" HorizontalAlignment="Left" Margin="113,128,0,0" VerticalAlignment="Top" Width="52" AutomationProperties.Name="tireTxt" Grid.Column="2" Height="25"/>
-        <Label Content="加入的回合" HorizontalAlignment="Left" Margin="37,332,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="2" Height="25" Width="73"/>
-        <TextBox x:Name="enterRoundTB_tgt" HorizontalAlignment="Left" Height="25" Margin="115,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="roundTB" Grid.Column="2" TextChanged="Calculation"/>
-        <Label Content="加入的回合" HorizontalAlignment="Left" Margin="23,588,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Height="25" Width="73"/>
-        <TextBox x:Name="enterRoundTB_atk" HorizontalAlignment="Left" Height="25" Margin="115,588,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="roundTB" TextChanged="Calculation"/>
-        <Label x:Name="enterRoundACT_atk" Content="0" HorizontalAlignment="Left" Margin="329,588,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="headArmorAct" Height="25"/>
-        <Label x:Name="enterRoundACT_tgt" Content="0" HorizontalAlignment="Left" Margin="329,332,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="headArmorAct" Height="25" Grid.Column="2"/>
+        <Label Content="加入的回合" HorizontalAlignment="Left" Margin="37,358,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="2" Height="25" Width="73"/>
+        <TextBox x:Name="enterRoundTB_tgt" HorizontalAlignment="Left" Height="25" Margin="115,358,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="roundTB" Grid.Column="2" TextChanged="Calculation"/>
+        <Label Content="加入的回合" HorizontalAlignment="Left" Margin="23,622,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Height="25" Width="73"/>
+        <TextBox x:Name="enterRoundTB_atk" HorizontalAlignment="Left" Height="25" Margin="115,622,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="roundTB" TextChanged="Calculation"/>
+        <Label x:Name="enterRoundACT_atk" Content="0" HorizontalAlignment="Left" Margin="329,622,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="headArmorAct" Height="25"/>
+        <Label x:Name="enterRoundACT_tgt" Content="0" HorizontalAlignment="Left" Margin="329,356,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="headArmorAct" Height="25" Grid.Column="2"/>
         <Label Content="%" HorizontalAlignment="Left" Margin="327,38,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="24"/>
         <Label Content="%" HorizontalAlignment="Left" Margin="327,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="24"/>
         <Label Content="%" HorizontalAlignment="Left" Margin="327,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="24"/>
@@ -189,11 +189,19 @@
         <Label Content="%" HorizontalAlignment="Left" Margin="327,227,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="24"/>
         <Label Content="回避技能等级" HorizontalAlignment="Left" Margin="27,296,0,0" VerticalAlignment="Top" Height="25" Width="89" Grid.Column="2"/>
         <TextBox x:Name="dodgeSkillLvTB_tgt" HorizontalAlignment="Left" Height="25" Margin="115,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="weightTB" TextChanged="Calculation" Grid.Column="2"/>
-        <Label x:Name="dodgeSkillLvAct_tgt" Content="0" HorizontalAlignment="Left" Margin="329,301,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="weightAct" Height="25" Grid.Column="2"/>
+        <Label x:Name="dodgeSkillLvAct_tgt" Content="0" HorizontalAlignment="Left" Margin="329,297,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="weightAct" Height="25" Grid.Column="2"/>
         <Label Content="才智" HorizontalAlignment="Left" Margin="56,83,0,0" VerticalAlignment="Top" Height="25" Width="34" Grid.Column="2"/>
         <TextBox x:Name="brightTB_tgt" HorizontalAlignment="Left" Height="25" Margin="115,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="brightTB" TextChanged="Calculation" Grid.Column="2"/>
         <TextBox x:Name="brightAddTB_tgt" HorizontalAlignment="Left" Height="25" Margin="205,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="brightAddTB" TextChanged="Calculation" Grid.Column="2"/>
         <Label x:Name="brightAct_tgt" Content="0" HorizontalAlignment="Left" Margin="329,85,0,0" VerticalAlignment="Top" Width="52" AutomationProperties.Name="brightAct" Height="25" Grid.Column="2"/>
+        <Label Content="格挡技能等级" HorizontalAlignment="Left" Margin="21,328,0,0" VerticalAlignment="Top" Height="25" Width="89"/>
+        <TextBox x:Name="guardSkillLvTB_atk" HorizontalAlignment="Left" Height="25" Margin="115,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="weightTB" TextChanged="Calculation"/>
+        <Label x:Name="guardSkillLvAct_atk" Content="0" HorizontalAlignment="Left" Margin="329,328,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="weightAct" Height="25"/>
+        <Label Content="格挡技能等级" HorizontalAlignment="Left" Margin="27,326,0,0" VerticalAlignment="Top" Height="25" Width="89" Grid.Column="2"/>
+        <TextBox x:Name="guardSkillLvTB_tgt" HorizontalAlignment="Left" Height="25" Margin="115,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" TextAlignment="Center" FontSize="14" AutomationProperties.Name="weightTB" TextChanged="Calculation" Grid.Column="2"/>
+        <Label x:Name="guardSkillLvAct_tgt" Content="0" HorizontalAlignment="Left" Margin="329,326,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.588,1.504" AutomationProperties.Name="weightAct" Height="25" Grid.Column="2"/>
+        <Label Content="格挡" HorizontalAlignment="Left" Margin="36,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.17,0.044" Grid.Column="1" Height="25" Width="34"/>
+        <Label x:Name="guardTxt" Content="0" HorizontalAlignment="Left" Margin="90,98,0,0" VerticalAlignment="Top" Width="52" Grid.Column="1" AutomationProperties.Name="dodgeTxt" Height="25"/>
 
     </Grid>
 </Window>

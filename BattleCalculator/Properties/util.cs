@@ -77,7 +77,7 @@ namespace BattleCalculator.Properties
             return hitrate * 100;
         }
 
-        public double GetAttackResult(Random dice, double hitrate_final, double headshot_adj, double dodge_tgt)
+        public double GetAttackResult(Random dice, double hitrate_final, double headshot_adj, double dodge_tgt, double guard_tgt)
         {
             int d1 = dice.Next(1, 100);
             if (d1 <= hitrate_final)
@@ -96,9 +96,13 @@ namespace BattleCalculator.Properties
             {
                 //not hit - dodge
                 int d3 = dice.Next(1, 100);
-                if (d3 <= dodge_tgt / (dodge_tgt)){
+                if (d3 <= (guard_tgt / (guard_tgt + dodge_tgt)) * 100){
                     //working...
-                    ;
+                    //guard();
+                }
+                else
+                {
+                    //dodge();
                 }
                 
             }
